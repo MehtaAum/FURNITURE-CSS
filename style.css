@@ -1,0 +1,1556 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    transition: 0.3s;
+}
+
+
+/* hero */
+.hero {
+    width: 100%;
+    height: 950px;
+    background-image: url(./asset/hero.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.51);
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.hero .navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-inline: 3%;
+    justify-content: space-between;
+}
+
+.hero .navbar .navleft {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.hero .navbar .navleft p {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.hero .navbar .navright {
+    width: 30%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.ri-menu-line {
+    display: flex;
+}
+
+.hero .navbar .navright a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.hero .navbar .navright a:hover {
+    color: rgb(196, 196, 196);
+}
+
+#special {
+    color: rgb(196, 196, 196);
+}
+
+.hero .navbar .navright button {
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: 0.3s;
+}
+
+.hero .navbar .navright button:hover {
+    color: rgb(196, 196, 196);
+    border: 1px solid rgb(196, 196, 196);
+    cursor: pointer;
+}
+
+.hero .heroinfo {
+    width: 50%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.hero .heroinfo h2 {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.hero .heroinfo h1 {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.fixed01 {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 700px;
+    align-items: center;
+    position: fixed;
+}
+
+.fixed01 i {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.fixed01 svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.chat {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(154, 138, 120);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 1.5%;
+    cursor: pointer;
+    position: relative;
+    position: fixed;
+    right: 15px;
+    top: 850px;
+    z-index: 3;
+    transition: 0.4s;
+}
+
+.chat:hover {
+    background-color: rgb(187, 176, 163);
+}
+
+.chat svg {
+    font-size: 30px;
+}
+
+.chat h5 {
+    font-size: 16px;
+}
+
+/* hero */
+
+
+/* div1 */
+.alldiv {
+    width: 100%;
+    height: auto;
+    border: 0.5px solid rgb(154, 138, 121);
+    border-bottom: none;
+}
+
+.div1 {
+    width: 100%;
+    height: auto;
+    padding-inline: 60px;
+    padding-block: 60px;
+    background-color: rgb(38, 38, 38);
+    box-sizing: border-box;
+}
+
+.div1 .alldiv1 {
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+
+.div1 .box1 {
+    width: 50%;
+    height: inherit;
+    border: 0.5px solid rgb(154, 138, 121);
+    background-image: url(./asset/div1.jpg);
+    background-size: cover;
+    border-bottom: none;
+    border-top: none;
+}
+
+.div1 .box2 {
+    width: 50%;
+    height: inherit;
+    border: 0.5px solid rgb(154, 138, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+    border-top: none;
+}
+
+.infobox2 {
+    width: 360px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infobox2 h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.infobox2 li {
+    color: white;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.infobox2 button {
+    width: 260px;
+    height: 60px;
+    background-color: rgb(154, 138, 121);
+    border: none;
+    transition: 0.3s;
+}
+
+.infobox2 button:hover {
+    background-color: rgb(190, 184, 178);
+    cursor: pointer;
+}
+
+.allrow {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    border: none;
+}
+
+.row1 {
+    width: 25%;
+    height: inherit;
+    border: 0.5px solid rgb(154, 138, 121);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 60px;
+}
+
+.row1 .subrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row1 .subrow p,
+h1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+
+.row1 svg {
+    font-size: 80px;
+}
+
+.box3 {
+    width: 50%;
+    height: inherit;
+    border: 0.5px solid rgb(154, 138, 121);
+    background-image: url(./asset/div2.jpg);
+    background-size: cover;
+    border-bottom: none;
+}
+
+.third {
+    display: flex;
+    width: 100%;
+    height: 600px;
+ 
+}
+
+.third .thirdleft {
+    width: 50%;
+    height: inherit;
+    border: 0.5px solid rgb(154, 138, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: none;
+    border-left: none;
+   
+}
+
+.third .thirdright {
+    width: 50%;
+    height: inherit;
+    border: 0.5px solid rgb(154, 138, 121);
+    background-image: url(./asset/div2.jpg);
+    background-size: cover;
+    border-top: none;
+    border-left: none;
+}
+
+.third .infothird {
+    width: 55%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.third .infothird h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.third .infothird .subthird p {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(154, 138, 120);
+}
+
+.third .infothird .subthird2 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 28px;
+}
+
+/* div1 */
+
+
+/* div2 */
+.div2 {
+    width: 100%;
+    height: auto;
+    padding-inline: 5%;
+    padding-block: 5%;
+    background-color: rgb(38, 38, 38);
+}
+
+.div2 .infodiv2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.div2 .infodiv2 h1 {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.div2 .allimgdiv2 {
+    width: 100%;
+    height: 780px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.div2 .sub1imgdiv2 {
+    width: 39%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img1 {
+    width: 47%;
+    height: 53%;
+    border: 0.5px solid rgb(154, 138, 121);
+    background-image: url(./asset/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2 .allimgdiv2 h1 {
+    font-size: 22px;
+    color: black;
+    opacity: 0;
+}
+
+.div2 .allimgdiv2 .div2img1:hover h1,
+.div2 .allimgdiv2 .div2img2:hover h1,
+.div2 .allimgdiv2 .div2img3:hover h1,
+.div2 .allimgdiv2 .div2img4:hover h1,
+.div2 .allimgdiv2 .div2img5:hover h1 {
+    opacity: 1;
+}
+
+.div2 .allimgdiv2 .div2img1:hover,
+.div2 .allimgdiv2 .div2img2:hover,
+.div2 .allimgdiv2 .div2img3:hover,
+.div2 .allimgdiv2 .div2img4:hover,
+.div2 .allimgdiv2 .div2img5:hover {
+    background-color: rgb(207, 207, 207);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img2 {
+    width: 44%;
+    height: 34%;
+    border: 0.5px solid rgb(154, 138, 121);
+    margin-left: 8%;
+    background-image: url(./asset/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img4 {
+    width: 47%;
+    height: 28%;
+    border: 0.5px solid rgb(154, 138, 121);
+    margin-top: -1%;
+    background-image: url(./asset/img4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img5 {
+    width: 44%;
+    height: 44%;
+    border: 0.5px solid rgb(154, 138, 121);
+    margin-top: -19%;
+    margin-left: 8%;
+    background-image: url(./asset/img5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2 .subimgdiv2 {
+    width: 58%;
+    height: 100%;
+}
+
+.div2 .allimgdiv2 .subimgdiv2 .div2img3 {
+    width: 100%;
+    height: 90%;
+    border: 0.5px solid rgb(154, 138, 121);
+    background-image: url(./asset/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2 .div2btn {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.div2 .div2btn button {
+    width: 14%;
+    height: 100%;
+    background-color: rgb(154, 138, 120);
+    border: none;
+    transition: 0.4s;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.div2 .div2btn button:hover {
+    background-color: rgb(180, 174, 167);
+    cursor: pointer;
+}
+
+/* test */
+.test {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    margin-top: 4%;
+}
+
+.test .test1,
+.test .test2,
+.test .test3,
+.test .test4 {
+    width: 25%;
+    height: inherit;
+    border: 0.5px solid rgb(154, 138, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.test .test2 .subtest,
+.test .test3 .subtest,
+.test .test4 .subtest {
+    width: auto;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.test .test2 .subtest p,
+.test .test3 .subtest p,
+.test .test4 .subtest p {
+    font-size: 16px;
+    color: white;
+    line-height: 23px;
+}
+
+.test .test2 .subtest h1,
+.test .test3 .subtest h1,
+.test .test4 .subtest h1 {
+    font-size: 30px;
+    color: rgb(154, 138, 120);
+}
+
+.test .test3 .subtest .topdown {
+    margin-top: 25%;
+}
+
+.test .test1 {
+    background-color: rgb(154, 138, 121);
+}
+
+.test .test1 h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* test */
+/* footer */
+.footer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.footer .foot1,
+.footer .foot2,
+.footer .foot3 {
+    width: 33.33%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.footer .foot1 .subfoot1 {
+    width: auto;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .foot1 .subfoot1 h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(154, 138, 120);
+}
+
+.footer .foot1 .subfoot1 .infofoot1 {
+    width: 280px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer .foot1 .subfoot1 .infofoot1 svg {
+    color: rgb(154, 138, 120);
+    font-size: 40px;
+    font-weight: lighter;
+    margin-right: 10%;
+}
+
+.footer .foot1 .subfoot1 .infofoot1 p {
+    color: rgb(154, 138, 120);
+    font-size: 16px;
+}
+
+.footer .lastfootpara p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(154, 138, 120);
+    line-height: 20px;
+}
+
+.footer .foot2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .foot2 .subfoot2 {
+    width: 65%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .foot2 .subfoot2 .sub1 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.footer .foot2 .subfoot2 .sub1 .sub1left,
+.footer .foot2 .subfoot2 .sub1 .sub1right {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .foot2 .subfoot2 h1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(154, 138, 120);
+}
+
+.footer .foot2 .subfoot2 .sub1 .sub1left input,
+.footer .foot2 .subfoot2 .sub1 .sub1right input {
+    border: none;
+    width: 90%;
+    background: transparent;
+    border-bottom: 1px solid rgb(154, 138, 120);
+    color: rgb(154, 138, 120);
+    font-size: 16px;
+}
+
+.footer .foot2 .subfoot2 .sub1 .sub1left input:active,
+.footer .foot2 .subfoot2 .sub1 .sub1right input:active {
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(243, 243, 243, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
+}
+
+.footer .foot2 .subfoot2 .sub2 input {
+    border: none;
+    width: 95%;
+    background: transparent;
+    border-bottom: 1px solid rgb(154, 138, 120);
+    color: rgb(154, 138, 120);
+    font-size: 16px;
+}
+
+.footer .foot2 .subfoot2 .sub2 input:active {
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(243, 243, 243, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
+}
+
+.footer .foot2 .subfoot2 .sub2 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .foot2 button {
+    width: 92%;
+    height: 10%;
+    color: rgb(154, 138, 120);
+    background: transparent;
+    border: 1px solid rgb(154, 138, 120);
+    transition: 0.3s;
+}
+
+.footer .foot2 button:hover {
+    background-color: rgb(154, 138, 120);
+    color: black;
+    cursor: pointer;
+    box-shadow: rgb(154, 138, 120) 0px 0px 0px 2px inset, rgb(77, 76, 76) 10px -10px 0px -3px, rgb(154, 138, 120) 10px -10px, rgb(107, 107, 107) 20px -20px 0px -3px, rgb(154, 138, 120) 20px -20px;
+}
+
+.footer .foot3 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.footer .foot3 .subfoot3 {
+    width: auto;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30%;
+    margin-right: 30%;
+}
+
+.footer .foot3 .subfoot3 .infofoot3 p {
+    font-size: 14px;
+    color: rgb(154, 138, 120);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.footer .foot3 button {
+    width: 120px;
+    height: 36px;
+    background-color: rgb(154, 138, 120);
+    border: none;
+    transition: 0.3s;
+}
+
+.footer .foot3 button:hover {
+    background-color: rgb(158, 158, 158);
+    cursor: pointer;
+}
+.lastfoot p{
+    display: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(154, 138, 120);
+    line-height: 20px;
+}
+.menuclick{
+    display: none;
+}
+.ri-menu-line{
+    display: none;
+}
+/* footer */
+/* div2 */
+
+
+/* mobile devices */
+@media (max-width:430px) {
+  
+    .navright a,
+    .navright button {
+        display: none;
+    }
+    .ri-menu-line {
+        display: flex;
+        color: white;
+        font-size: 25px;
+        margin-left: 50%;
+    }
+    .menuclick {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 150%;
+        transition: 1s;
+        gap: 10px;   
+        box-shadow: 0px 9px 30px rgba(11, 11, 11, 0.3);
+    }
+    .menuclick a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+    .menuclick a:hover{
+        color: rgb(196, 196, 196);
+    }
+    .menuclick button {
+        width: 70px;
+        height: 20px;
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        transition: 0.3s;
+        font-size: 10px;
+    }    
+    .menuclick button:hover {
+        color: rgb(196, 196, 196);
+        border: 1px solid rgb(196, 196, 196);
+        cursor: pointer;
+    }
+    .aum {
+        display: flex; 
+        margin-left: 65%;
+        transition: 1s;
+    }
+    .aumtwo{
+        transform: rotate(360deg);
+    }
+    .bodyopacity{
+        opacity: 0.93;
+        transition: 0.3s;
+    }
+    .hero{
+       height: 850px;
+       overflow: hidden;
+    }
+    .hero .heroinfo {
+        width: 80%;
+        height: 160px;
+        text-align: center;
+        margin-top: 25%;
+        gap: 5px;
+    }
+    .hero .heroinfo h2 {
+        font-size: 100%;
+    }
+    .hero .heroinfo h1 {
+        font-size: 200%;
+    }
+    .fixed01{
+        display: none;
+    }
+    .chat {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        right: 15px;
+        top: 90%;
+    }
+    .chat:hover {
+        background-color: rgb(187, 176, 163);
+    }
+    .chat svg {
+        font-size: 50px;
+    }
+    .chat h5 {
+       display: none;
+    }
+
+    /* div1 */
+    .div1 {  
+        padding-inline: 0%;
+        padding-block: 0%;
+    }
+    .div1 .alldiv1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .div1 .box1 {
+        width: 100%;
+        height: inherit;
+    }
+    .div1 .box2 {
+        width: 100%;
+        height: inherit;
+      
+    }
+    .infobox2 {
+       justify-content: space-evenly;
+    }
+    
+    .infobox2 h1 {
+        font-size: 30px;
+    }
+    
+    .infobox2 button {
+        width: 40%;
+        height: 40px;
+        background-color: rgb(154, 138, 121);
+        border: none;
+        transition: 0.3s;
+    }
+    .allrow {
+       display: flex;
+       flex-wrap: wrap;
+       height: 400px;
+       align-content: start;
+    }
+    .row1 {
+        width: 50%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-bottom: 0.5px solid rgb(154, 138, 121);
+    }
+    .row1 .subrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       margin-top: 5%;
+       gap: 5px;
+    }
+    .row1 svg {
+      transform: scale(1.4);
+    }
+    
+    
+    .row1 .subrow p,
+h1 {
+    font-size: 16px;
+ 
+}
+
+
+.third {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+}
+.third .thirdleft {
+    width: 100%;
+    height: 50%;
+}
+
+.third .thirdright {
+    width: 100%;
+    height: 50%;
+
+}
+
+
+.third .infothird {
+    width: 55%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.third .infothird h1 {
+    font-size: 160%;
+}
+.third .infothird .subthird p {
+    font-size: 100%;
+}
+.third .infothird .subthird2 p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 18px;
+}
+
+    /* div1 */
+    
+
+    /* div2 */
+    .div2 .infodiv2 h1 {
+        font-size: 130%;
+    }
+    
+.div2 .allimgdiv2 {
+    width: 100%;
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+}
+.div2 .sub1imgdiv2 {
+    width: 100%;
+    height: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: start;
+}
+.div2 .subimgdiv2 {
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+
+}
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img1 {
+    width: 98%;
+    height: 450px;
+ 
+}
+
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img2 {
+    width: 98%;
+    height: 270px;
+    margin-left: 0%;
+
+}
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img4 {
+    width: 98%;
+    height: 270px;
+    background-position: center;
+}
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img5 {
+    width: 98%;
+    height: 410px;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+.div2 .allimgdiv2 .subimgdiv2 .div2img3 {
+    width: 98%;
+    height: 270px;
+}
+.div2 .div2btn button {
+    width: 30%;
+    height: 65%;
+}
+    /* div2 */
+
+  /* test */
+  .test {
+    height: 1300px;
+    flex-direction: column;
+}
+.test .test1,
+.test .test2,
+.test .test3,
+.test .test4 {
+    width: 100%;
+    height: inherit;
+    
+}
+.test .test1{
+    height: 20%;
+}
+
+
+  /* test */
+    
+/* footer */
+.footer {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.footer .foot1,
+.footer .foot2,
+.footer .foot3 {
+    width: 100%;
+}
+.footer .foot1 .subfoot1 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.footer .lastfootpara p {
+   display: none;
+}
+.footer .foot2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer .foot2 .subfoot2 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+   
+}
+.footer .foot3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .foot3 .subfoot3 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0%;
+    margin-right: 0%;
+}
+.lastfoot p{
+    display: flex;
+}
+
+
+
+/* footer */
+
+
+}
+/* mobile devices */
+
+
+/* tablet devices */
+@media (min-width:431px) and (max-width:1024px) {
+
+
+    html, body {
+        overflow-x: hidden;
+    }
+    .navright a,
+    .navright button {
+        display: none;
+    }
+    .ri-menu-line {
+        display: flex;
+        color: white;
+        font-size: 25px;
+        margin-left: 80%;
+    }
+    .menuclick {
+        width: 450px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 250%;
+        transition: 1s;
+        gap: 100px;   
+        border-radius: 30px;
+        z-index: 3;
+        opacity: 0.9;
+        background-color: rgb(30,27,27);
+        box-shadow: -10px 10px 0px rgba(33, 33, 33, 1), -20px 20px 0px rgba(33, 33, 33, 0.7), -30px 30px 0px rgba(33, 33, 33, 0.4), -40px 40px 0px rgba(80, 80, 80, 0.1);
+    }
+    .menuclick a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+    .menuclick a:hover{
+        color: rgb(196, 196, 196);
+    }
+    .menuclick button {
+        width: 120px;
+        height: 50px;
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        transition: 0.3s;
+        font-size: 14px;
+    }    
+    .menuclick button:hover {
+        color: rgb(196, 196, 196);
+        border: 1px solid rgb(196, 196, 196);
+        cursor: pointer;
+    }
+    .aum {
+        display: flex; 
+        margin-left: 0%;
+        transition: 1s;
+    }
+    .aumtwo{
+        transform: rotate(360deg);
+    }
+
+    .bodyopacity{
+        opacity: 0.93;
+        transition: 0.3s;
+    }
+    .hero{
+       height: 850px;
+       overflow-x: hidden;
+    }
+    .hero .heroinfo {
+        width: 80%;
+        height: 160px;
+        text-align: center;
+        margin-top: -45%;
+        gap: 5px;
+      
+    }
+    .hero .heroinfo h2 {
+        font-size: 110%;
+    }
+    .hero .heroinfo h1 {
+        font-size: 230%;
+    }
+    .fixed01{
+    display: none;
+    }
+    .chat {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        right: 30px;
+        top: 710px;
+    }
+    .chat:hover {
+        background-color: rgb(187, 176, 163);
+    }
+    .chat svg {
+     font-size: 60px;
+    }
+    .chat h5 {
+       display: none;
+    }
+
+    /* div1 */
+    .div1 {  
+        padding-inline: 0%;
+        padding-block: 0%;
+    }
+    .div1 .alldiv1 {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 900px;
+    }
+    .div1 .box1 {
+        width: 100%;
+        height: 80%;
+
+    }
+    .div1 .box2 {
+        width: 100%;
+        height: auto;
+    }
+    .infobox2 {
+       justify-content: space-evenly;
+    }
+    
+    .infobox2 h1 {
+        font-size: 30px;
+    }
+    
+    .infobox2 button {
+        width: 40%;
+        height: 40px;
+        background-color: rgb(154, 138, 121);
+        border: none;
+        transition: 0.3s;
+    }
+    .allrow {
+       display: flex;
+       flex-wrap: wrap;
+       height: 400px;
+       align-content: start;
+    }
+    .row1 {
+        width: 50%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-bottom: 0.5px solid rgb(154, 138, 121);
+    }
+    .row1 .subrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .row1 svg {
+      transform: scale(2);
+      margin-bottom: 20px;
+      
+    }
+    
+    
+    .row1 .subrow p,
+h1 {
+    font-size: 16px;
+}
+
+
+.third {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+}
+.third .thirdleft {
+    width: 100%;
+    height: 25%;
+}
+
+.third .thirdright {
+    width: 100%;
+    height: 75%;
+
+}
+
+
+.third .infothird {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    
+}
+
+.third .infothird h1 {
+    font-size: 160%;
+}
+.third .infothird .subthird p {
+    font-size: 100%;
+}
+.third .infothird .subthird2 p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 18px;
+}
+
+    /* div1 */
+    
+
+    /* div2 */
+    .div2 .infodiv2 h1 {
+        font-size: 170%;
+    }
+    
+.div2 .allimgdiv2 {
+    width: 100%;
+    height: 1650px;
+    display: flex;
+    flex-direction: column;
+}
+.div2 .sub1imgdiv2 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: start;
+}
+.div2 .subimgdiv2 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+
+}
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img1 {
+    width: 45%;
+    height: 500px;
+ 
+}
+
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img2 {
+    width: 55%;
+    height: 400px;
+    margin-left: 0%;
+
+}
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img4 {
+    width: 55%;
+    height: 300px;
+    background-position: center;
+    margin-top: 5%;
+}
+.div2 .allimgdiv2 .sub1imgdiv2 .div2img5 {
+    width: 45%;
+    height: 420px;
+    margin-top: 5%;
+    margin-left: 0%;
+}
+.div2 .allimgdiv2 .subimgdiv2 .div2img3 {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.div2 .div2btn button {
+    width: 30%;
+    height: 65%;
+    margin-top: 3%;
+}
+    /* div2 */
+
+  /* test */
+  .test {
+    height: 1300px;
+    flex-direction: column;
+    align-items: center;
+}
+.test .test1,
+.test .test2,
+.test .test3,
+.test .test4 {
+    width: 70%;
+    height: inherit;
+    
+}
+.test .test1{
+    height: 20%;
+}
+
+
+  /* test */
+    
+/* footer */
+.footer {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.footer .foot1,
+.footer .foot2,
+.footer .foot3 {
+    width: 100%;
+}
+.footer .foot1 .subfoot1 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.footer .lastfootpara p {
+   display: none;
+}
+.footer .foot2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer .foot2 .subfoot2 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+   
+}
+.footer .foot3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .foot3 .subfoot3 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0%;
+    margin-right: 0%;
+}
+.lastfoot p{
+    display: flex;
+}
+
+
+
+/* footer */
+
+
+}
+/* tablet devices */
+
+
+/* pc  */
+@media (min-width:1025px) and (max-width:1743px) {
+
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    
+.hero .navbar .navright {
+    width: 50%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ 
+    .ri-menu-line {
+        display: none;
+    }
+    .menuclick {
+        display: none;
+    }
+    .menuclick a{
+        display: none;
+    }
+    .aum {
+        display: none;
+    }
+    .aumtwo{
+        display: none;
+    }
+
+    .bodyopacity{
+        display: none;
+    }
+   
+    .hero .heroinfo {
+        width: 80%;
+        height: 160px;  
+    }
+    .hero .heroinfo h2 {
+        font-size: 100%;
+    }
+    .hero .heroinfo h1 {
+        font-size: 300%;
+    }
+
+
+    .div2 .allimgdiv2 .sub1imgdiv2 .div2img4 {
+        background-position: center;
+    }
+    .div2 .allimgdiv2 h1 {
+        font-size: 15px;
+    }
+    .div2 .allimgdiv2 .sub1imgdiv2 .div2img5 {
+        height: 30%;
+        margin-top: -4.5%;
+        margin-left: 8%;
+        background-position: center;
+    }
+    .div2 .div2btn button {
+        width: 25%;
+        height: 80%;
+       
+    }
+    .test .test2 .subtest h1,
+.test .test3 .subtest h1,
+.test .test4 .subtest h1 {
+    font-size: 20px;
+}
+.test .test2 .subtest p,
+.test .test3 .subtest p,
+.test .test4 .subtest p {
+    font-size: 15px;
+}
+.test .test1 h1 {
+    font-size: 30px;
+}
+
+   
+
+/* footer */
+
+
+}
+/* pc  */
